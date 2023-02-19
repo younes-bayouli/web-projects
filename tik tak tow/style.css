@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    background-color: #1919199c;
+}
+.game{
+    background: linear-gradient(45deg,#ffd89b, #19547b);
+    position: relative;
+    width: 490px;
+    height: calc(100vw - 25px);
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 32% 32% 32%;
+    margin: 5px 5px 0;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 50px;
+}
+.button{
+    font-size: 100px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button.disabled{
+    cursor: not-allowed;
+}
+.hi{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 40px solid white;
+}
+.result{
+    font-size: xx-large;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    flex-direction: column;
+}
+.result h1{
+    text-align: center;
+}
+.result div a{
+    text-decoration: none;
+    padding: 30px;
+    float: left;
+}
+.result div div{
+    padding: 30px;
+    color: #551A8B;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+table{
+    width: 490px;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(#FFEFBA, #FFEFBA);
+}
+table th{
+    font-weight: 900;
+}
+table td{
+    font-size: 50px;
+    padding: 10px;
+}
+table, th, td{
+    border: 2px solid;
+}
+@media screen and (min-width:850px){
+    body{
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+    .game{
+        height: 490px;
+    }
+    table{
+        margin: 0;
+        width: 350px;
+        height: 200px;
+    }
+    .result{
+        border-radius: 50px;
+        height: 95vh;
+        width: 98vw;
+    }
+
+} 

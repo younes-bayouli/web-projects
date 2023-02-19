@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- !clock -->
+    <div class="container">
+        <div class="clock">
+            <div class="hours">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="minuts">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="seconds">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <div class="digitale_clock">
+            <h1 class="time"></h1>
+            <h2 class="date"></h2>
+        </div>
+    </div>
+    <!-- !end clock -->
+    <!-- todo stopwatch -->
+    <div class="container">
+        <div class="stopwatch">
+            <h1>00:00.00</h1>
+            <div>
+                <img onclick="restart()" src="./icons8-restart-32.png">
+                <img class="stopwatch_start" src="./icons8-play-48.png">
+                <img class="timer" src="./icons8-timer-32.png">
+            </div>
+            <img id="stopwatchh_img" src="./stopwatchs2.png">
+        </div>
+    </div>
+    <!-- todo end stopwatch -->
+    <!-- timer -->
+    <div class="container">
+        <div class="timer">
+            <div class="cont">
+                <div class="con hou">
+                    <div class="active arrow up" onclick="change(1,h1h)"></div>
+                    <h1>00</h1>
+                    <div class="active arrow down" onclick="change(-1,h1h)"></div>
+                </div>
+                <h2>:</h2>
+                <div class="con minu">
+                    <div class="active arrow up" onclick="change(1,h1m)"></div>
+                    <h1>00</h1>
+                    <div class="active arrow down" onclick="change(-1,h1m)"></div>
+                </div>
+                <h2>:</h2>
+                <div class="con seco">
+                    <div class="active arrow up" onclick="change(1,h1s)"></div>
+                    <h1>00</h1>
+                    <div class="active arrow down" onclick="change(-1,h1s)"></div>
+                </div>
+                <img id="img" src="./timer.png">
+            </div>
+            <div class="controle">
+                <img onclick="restarting()" src="./icons8-restart-32.png">
+                <img class="starting" src="./icons8-play-48.png">
+            </div>
+        </div>
+    </div>
+    <!-- end timer -->
+</body>
+<script src="script.js"></script>
+
+</html>
